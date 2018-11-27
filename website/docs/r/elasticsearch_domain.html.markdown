@@ -113,7 +113,7 @@ AWS documentation: [VPC Support for Amazon Elasticsearch Service Domains](https:
 * `security_group_ids` - (Optional) List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
 * `subnet_ids` - (Required) List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
 
-Security Groups and Subnets referenced in these attributes must all be within the same VPC; this determines what VPC the endpoints are created in.
+Security Groups and Subnets referenced in these attributes must all be within the same VPC; this determines what VPC the endpoints are created in. IP-based access policies are not supported for domains with a VPC endpoint.
 
 **snapshot_options** supports the following attribute:
 
